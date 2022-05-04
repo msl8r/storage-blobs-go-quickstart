@@ -1,13 +1,10 @@
 package main
 
 import (
-	"bufio"
-	"bytes"
 	"context"
 	"fmt"
 	"log"
 	"math/rand"
-	"os"
 	"strconv"
 	"time"
 
@@ -51,7 +48,7 @@ func main() {
 	// Create the container
 	containerName := fmt.Sprintf("matts-test")
 // 	fmt.Printf("Creating a container named %s\n", containerName)
-// 	containerClient := serviceClient.NewContainerClient(containerName)
+	containerClient := serviceClient.NewContainerClient(containerName)
 // 	_, err = containerClient.Create(ctx, nil)
 // 	if err != nil {
 // 		log.Fatal(err)
